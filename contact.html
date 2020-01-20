@@ -2,15 +2,35 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Contact</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <title>Useful Information</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en">
+<head> -->
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+<!--   <title>Contact</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   -->
   
 <style>
   body {
@@ -102,13 +122,79 @@ margin: 40px 80px;
     border-radius: 25px
 }
 
+<!-- /* Style inputs with type="text", select elements and textareas */ -->
+input[type=text], select, textarea {
+  width: 100%; <!-- /* Full width */ -->
+  padding: 12px; <!-- /* Some padding */  -->
+  border: 1px solid #ccc; <!-- /* Gray border */ -->
+  border-radius: 4px; <!-- /* Rounded borders */ -->
+  box-sizing: border-box; <!-- /* Make sure that padding and width stays in place */ -->
+  margin-top: 6px; <!-- /* Add a top margin */ -->
+  margin-bottom: 16px; <!-- /* Bottom margin */ -->
+  resize: vertical <!-- /* Allow the user to vertically resize the textarea (not horizontally) */ -->
+}
+
+<!-- /* Style the submit button with a specific background color etc */ -->
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+<!-- /* When moving the mouse over the submit button, add a darker green color */ -->
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+<!-- /* Add a background color and some padding around the form */ -->
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
   
 </style>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">ReduceMyRisk</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="team.html">The team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="useful.html">Useful info</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact us</a>
+      </li>
+    </ul>
+<!-- Search item in dropdown -->
+<!--     <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>
+
+
+
+<!-- Navbar -->
+<!-- <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -127,7 +213,7 @@ margin: 40px 80px;
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
 
 <!-- <section id="about" class="about"> -->
 <!-- First Container -->
@@ -167,6 +253,7 @@ margin: 40px 80px;
     <h3 class="margin">How to get involved</h3>
   <p> If you (or someone you know) are interested in taking part in the study, please contact us via this link.</p>
 </div>
+
 
 </section> -->
 <!-- end about section -->
@@ -225,6 +312,96 @@ margin: 40px 80px;
 
 </section> -->
 <!-- end useful info section -->
+
+
+
+<div class="container">
+  <form id="contact-form" method="post" action="contact.php" role="form">
+		
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Firstname *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Lastname *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_need">Please specify your need *</label>
+                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                        <option value=""></option>
+                        <option value="Request quotation">Request quotation</option>
+                        <option value="Request order status">Request order status</option>
+                        <option value="Request copy of an invoice">Request copy of an invoice</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted">
+                    <strong>*</strong> These fields are required. Contact form template by
+                    <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">Bootstrapious</a>.</p>
+            </div>
+        </div>
+    </div>
+		
+		
+<!--     <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit"> -->
+
+  </form>
+</div>
+
+
+
+
+
+
+
 
 
 <section id="info" class="info">
@@ -301,26 +478,41 @@ margin: 40px 80px;
 
 <!-- Quick navigation -->
 <aside id="feedback" class="about">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h3>Take me to:</h3>
-        <a href="index.html#about" class="btn btn-light btn-lg">About</a>
-        <a href="team.html#team" class="btn btn-light btn-lg">The team</a>
-        <a href="useful.html#useful" class="btn btn-dark btn-lg">Useful info</a>
-		<a href="contact.html#contact" class="btn btn-dark btn-lg">Contact us</a>
+        <a href="index.html#about" class="btn btn-light btn-lg mb-1">About</a>
+        <a href="team.html#team" class="btn btn-light btn-lg mb-1">The team</a>
+        <a href="useful.html#useful" class="btn btn-light btn-lg mb-1">Useful info</a>
+		<a href="contact.html#contact" class="btn btn-light btn-lg mb-1">Contact us</a>
       </div>
     </div>
   </div>
 </aside>
 
+
     
 <!-- Footer -->
 <footer class="container-fluid bg-3 text-center image-center">
-  <div class="col-sm-4"><img src="img/cruk.png" class="img-responsive center-block" ></div>
-  <div class="col-sm-4"><img src="img/uni.png" class="img-responsive center-block" ></div>
-  <div class="col-sm-4"><img src="img/nhs.png" class="img-responsive center-block" ></div>
+	<div class="row">
+		<div class="col-md-4"><img src="img/cruk.png" class="img-fluid center-block" ></div>
+		<div class="col-md-4"><img src="img/uni.png" class="img-fluid center-block" ></div>
+		<div class="col-md-4"><img src="img/nhs.png" class="img-fluid center-block" ></div>
+	</div>
 </footer>
 
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <!--    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+	<script src="contact.js"></script>
+
 </body>
+</html>
 </html>
