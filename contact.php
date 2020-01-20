@@ -4,13 +4,13 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'ReduceMyRisk <reducemyrisk@ed.ac.uk>';
+$from = 'ReduceMyRiskWebsite <reducemyrisk@ed.ac.uk>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'ReduceMyRisk <lisa.norman@ed.ac.uk>';
+$sendTo = 'ReduceMyRisk <reducemyrisk@ed.ac.uk>';
 
 // subject of the email
-$subject = 'New message from ReduceMyRisk contact form';
+$subject = 'New message from ReduceMyRisk contact form\n=============================\n';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
