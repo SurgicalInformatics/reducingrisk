@@ -7,7 +7,7 @@
 $from = 'ReduceMyRisk <reducemyrisk@ed.ac.uk>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'ReduceMyRisk <reducemyrisk@ed.ac.uk>';
+$sendTo = 'ReduceMyRisk <lisa.norman@ed.ac.uk>';
 
 // subject of the email
 $subject = 'New message from ReduceMyRisk contact form';
